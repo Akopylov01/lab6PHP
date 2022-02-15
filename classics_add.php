@@ -25,19 +25,19 @@ if (!empty($_POST['submit']) && $_POST['submit'] == 'ADD') {
 <form action="" method="post" class="form">
     <div class="mb-3">
         <label class="form-label">Author</label>
-        <input type="text" name="author" class="form-control">
+        <input type="text" name="author" class="form-control" required>
     </div>
     <div class="mb-3">
         <label class="form-label">Title</label>
-        <input type="text" name="title" class="form-control">
+        <input type="text" name="title" class="form-control" required>
     </div>
     <div class="mb-3">
         <label class="form-label">Category</label>
-        <input type="text" name="type" class="form-control">
+        <input type="text" name="type" class="form-control" required>
     </div>
     <div class="mb-3">
         <label class="form-label">Year</label>
-        <input type="text" name="year" class="form-control">
+        <input type="text" name="year" class="form-control" required>
     </div>
     <input type="submit" name="submit" class="btn btn-primary" name="submit" value="ADD">
 </form>

@@ -49,19 +49,19 @@ $res = mysqli_query($mysqli, $query);
         <form action="" method="post" class="form">
         <div class="mb-3">
             <label class="form-label">Author</label>
-            <input type="text" name="author" class="form-control" value="<?=$row['author']?>">
+            <input type="text" name="author" class="form-control" required value="<?=$row['author']?>">
         </div>
         <div class="mb-3">
             <label class="form-label">Title</label>
-            <input type="text" name="title" class="form-control" value="<?= $row['title']?>">
+            <input type="text" name="title" class="form-control" required value="<?= $row['title']?> ">
         </div>
         <div class="mb-3">
             <label class="form-label">Category</label>
-            <input type="text" name="type" class="form-control" value="<?= $row['type']?>">
+            <input type="text" name="type" class="form-control" required value="<?= $row['type']?> ">
         </div>
         <div class="mb-3">
             <label class="form-label">Year</label>
-            <input type="text" name="year" class="form-control" value="<?= $row['year']?>">
+            <input type="text" name="year" class="form-control" required value="<?= $row['year']?> ">
         </div>
         <input type="submit" name="submit" class="btn btn-primary" name="submit" value="UPD">
         </form>
